@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="logo">
+                <a href="#">Kiran</a>
+            </div>
+            <div class="navitems">
+                <ul class="navbar">
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#ttt">Tic Tac Toe</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#tdl">To Do List</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#rps">Rock Paper Scissors</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#weather">Weather</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#dic">Dictionary</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="fronted-box">
+            <div class="fronted ">
+                <p class="MyMsg"> Hi, My name is <span>Kiran</span> <br>and I am a passionate <br><span
+                        id="element"></span>
+                </p>
+                <p><a href="#contact">Get in Touch</a></p>
+            </div>
+            <div class="imgbox">
+                <div class="img">
+                    <img src="kiran.jpeg" alt="">
+                </div>
+                <div class="resume">
+                    <a href="Resume.pdf" download="">Download Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="mainAbout" id="about">
+            <h2>About Me</h2>
+            <section class="about">
+                <div class="contect space">
+                    <p>
+                        My expertise and abilities can revolutionize the way you work, making you more efficient,
+                        productive, and successful. I can be integrated into various platforms and systems, such as
+                        chatbots, websites, and mobile apps. I can learn and improve over time, adapting to new topics,
+                        domains, and tasks. I can handle multiple requests and conversations simultaneously, making me a
+                        great option for large-scale applications. I can automate tasks, such as answering frequently
+                        asked questions, providing customer support, or generating content, freeing up time for more
+                        complex and creative tasks. I can engage in natural-sounding conversations, using context and
+                        understanding to respond to questions and statements. I can generate high-quality text, from
+                        articles and stories to emails and chatbot responses, and even help with editing and
+                        proofreading.
+                    </p>
+                </div>
+
+                <div class="skills space">
+                    <h2>Skills</h2>
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <p>HTML stands for Hyper Text Markup Language. It is used to design web pages using a markup
+                            language. HTML is an abbreviation of Hypertext and Markup language. Hypertext defines the
+                            link between the web pages. The markup language is used to define the text document within
+                            the tag which defines the structure of web pages. HTML 5 is the fifth and current version of
+                            HTML. It has improved the markup available for documents and has introduced application
+                            programming interfaces (API) and Document Object Model (DOM).
+
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <p>CSS stands for Cascading Style Sheets
+                            CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                            CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                            External stylesheets are stored in CSS files. CSS is used to define styles for your web
+                            pages, including the design, layout and variations in display for different devices and
+                            screen sizes.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <p>JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled
+                            programming language. It is also known as the scripting language for webpages. It is
+                            well-known for the development of web pages, and many non-browser environments also use it.
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <h3>Bootstrap</h3>
+                        <p>Bootstrap is a popular, open-source front-end framework used for building responsive,
+                            mobile-first websites and web applications. </p>
+                    </div>
+                    <div class="skill">
+                        <h3>Git & GitHub</h3>
+                        <p>Git and GitHub are common tools used in programming. They help you manage different versions of your code and collaborate with other developers.
+
+                            Building projects is one of the core parts of being a developer. And Git and GitHub are essential tools you'll use when building projects with others.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="projectContainer">
+            <h2>Projects</h2>
+            <div class="projects">
+
+                <div class="project">
+
+                    <div class="imgContainer" style="background: url(TTT.jpeg); background-size: 100%;"></div>
+                    <div class="projectLink" id="ttt">
+                        <h3>Tic-Tac-Toe</h3>
+                        <a href="https://tic-tac-toe-kiran78.netlify.app/" target="_blank">Play &#8594;</a>
+                    </div>
+                </div>
+
+                <div class="project" id="tdl">
+                    <div class="imgContainer" style="background: url(TDL.jpeg); background-size: 100%;"></div>
+                    <div class="projectLink">
+                        <h3>To-Do-List</h3>
+                        <a href="https://to-do-list-kiran78.netlify.app/" target="_blank">Your Schedule &#8594;</a>
+                    </div>
+                </div>
+
+                <div class="project" id="rps">
+                    <div class="imgContainer" style="background: url(RPS.jpeg); background-size: 100%;"></div>
+                    <div class="projectLink">
+                        <h3>Rock-Paper-Scissors</h3>
+                        <a href="https://rock-paper-scissors-kiran78.netlify.app/" target="_blank">Play &#8594;</a>
+                    </div>
+                </div>
+
+                <div class="project" id="weather">
+                    <div class="imgContainer" style="background: url(weather.jpeg); background-size: 100%;"></div>
+                    <div class="projectLink">
+                        <h3>Weather-Report</h3>
+                        <a href="https://weather-kiran78.netlify.app/" target="_blank">Weather
+                            &#8594;</a>
+                    </div>
+                </div>
+
+                <div class="project" id="dic">
+                    <div class="imgContainer" style="background: url(dictionary.jpeg); background-size: 100%;"></div>
+                    <div class="projectLink">
+                        <h3>Dictionary</h3>
+                        <a href="https://dictionary-kiran78.netlify.app/" target="_blank">Search Word &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="moreAbout">
+            <div class="description">
+                <div class="coverBg">
+                    <p>1. Creating responsive, mobile-friendly, and accessible UI components. <br>
+                        2. Writing clean, efficient, and well-documented code. <br>
+                        3. Collaborating with designers to translate designs into functional code. <br>
+                        4. Implementing interactive features using JavaScript and libraries like React or Angular. <br>
+                        5. Ensuring cross-browser compatibility and debugging issues. <br>
+                        6. Optimizing website performance, speed, and scalability. <br>
+                        7. Staying up-to-date with industry trends, best practices, and new technologies Frontend
+                        developers
+                        work on the client-side of the application, focusing on creating a seamless and engaging user
+                        experience. They work closely with backend developers, who focus on the server-side logic and
+                        database integration.</p>
+                    <div class="more">
+                        <h4>Eligibities</h4>
+                        <p>- Proficiency in HTML, CSS, JavaScript, and CSS preprocessors like Sass or Less. <br>
+                            - Knowledge of UI/UX design principles and human-computer interaction. <br>
+                            - Familiarity with version control systems like Git and GitHub. <br>
+                            - Understanding of web performance optimization techniques. <br>
+                        </p>
+                        <p>- Experience with browser developer tools for debugging. <br>
+                            - Code editors like Visual Studio Code, Sublime Text, or Atom. <br>
+                            - Design tools like Sketch, Figma, Adobe XD, or Photoshop. <br>
+                            - Browser extensions like Chrome DevTools or Firefox Developer Edition.</p>
+                        <p>- Writing modular, reusable, and maintainable code.<br>
+                            - Implementing responsive design and mobile-first approach. <br>
+                            - Using CSS preprocessors and JavaScript frameworks to streamline development.<br>
+                            - Continuously testing and debugging code.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="contact" id="contact">
+            <h2>GET IN TOUCH</h2>
+            <div class="contact-info" id="contact">
+                <div class="left-contact-info">
+                    <div class="form">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                            <input type="hidden" name="access_key" value="56ab0771-083d-4d57-9cfa-563816df5574">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Email Id" required>
+                            <input type="text" name="phone" placeholder="Mobile No. (Optional)">
+                            <textarea name="msg" rows="4" placeholder="Your Meggase" required></textarea>
+                            <button type="submit" class="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="right-contact-info">
+                    <div class="contact">
+                        <div class="mail contact-box">
+                            <a href="mailto:kiran782774@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                            <span><a href="mailto:kiran782774@gmail.com">kiran782774@gmail.com</a></span>
+                        </div>
+                        <!-- <div class="phone contact-box">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>91-7827741559</span>
+                        </div> -->
+                        <div class="linkdin contact-box">
+                            <a
+                                href="https://www.linkedin.com/in/kiran-kumari-899baa306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <span><a
+                                    href="https://www.linkedin.com/in/kiran-kumari-899baa306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkdin
+                                </a>
+                            </span>
+                        </div>
+                        <div class="github contact-box">
+                            <a href="https://github.com/Kiran7827"><i class="fa-brands fa-github"></i></a>
+                            <span>
+                                <a href="https://github.com/Kiran7827">GitHub</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="JS/bootstrap.bundle.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Designer.', '<i>Fronted Web</i> Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: rgb(2, 2, 72);
+}
+
+/* navBar--------> */
+
+nav {
+    background: rgb(114, 135, 143);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: rgb(245, 240, 240);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+nav .navitems .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+nav .navbar li a {
+    color: rgb(245, 240, 240);
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav .navbar li a:hover {
+    color: rgb(215, 212, 212);
+}
+
+hr {
+    color: rgb(233, 230, 230);
+}
+
+.dropdown-menu {
+    background: rgb(114, 135, 143);
+}
+
+.dropdown-menu li .dropdown-item {
+    color: rgb(241, 235, 235);
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    background: rgb(106, 130, 139);
+}
+
+/* fronted Box */
+
+.fronted-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px auto;
+}
+
+.fronted-box .fronted span {
+    color: rgb(155, 90, 240);
+}
+
+.fronted-box .fronted {
+    font-size: 40px;
+    color: rgb(162, 189, 216);
+    margin-bottom: 20px;
+}
+
+.fronted p a {
+    text-decoration: none;
+    color: rgb(78, 132, 186);
+    background: rgb(221, 219, 219);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 30px;
+}
+
+.fronted-box .imgbox {
+    text-align: center;
+}
+
+.fronted-box .imgbox .img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.fronted-box .imgbox .resume a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(9, 9, 9);
+    background-color: rgb(27, 164, 213);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all .5s;
+}
+
+.fronted-box .imgbox .resume a:hover {
+    background: rgb(9, 120, 160);
+}
+
+/* About Section --------> */
+
+.mainAbout>h2 {
+    text-align: center;
+    color: rgb(19, 19, 19);
+    font-size: 30px;
+    font-weight: 700;
+    background: rgb(162, 189, 216);
+    padding: 15px 0;
+
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 5px solid rgb(114, 135, 143);
+    margin-bottom: 20px;
+    background: rgb(156, 200, 221);
+    margin: 40px;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+
+.about .space {
+    width: 45%;
+    color: rgb(4, 4, 4);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.about .contect p {
+    line-height: 40px;
+}
+
+/* skills */
+
+.skill {
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    background: rgb(140, 179, 218);
+    padding: 20px;
+}
+
+.skills h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skill h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill p {
+    text-align: justify;
+    display: none;
+
+}
+
+.skill:hover p {
+    display: flex;
+}
+
+.skill h3::after {
+    content: ">";
+    transform: rotate(90deg);
+}
+
+/* projects */
+
+.projectContainer h2 {
+    text-align: center;
+    background: rgb(140, 179, 218);
+    padding: 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.project {
+    width: 250px;
+    height: 250px;
+    background: white;
+    border-radius: 8px;
+    padding: 5px;
+    transition: all .5s;
+}
+
+.project .imgContainer {
+    height: 75%;
+    width: 100%;
+    position: relative;
+
+}
+
+.project .imgContainer::before {
+    left: 0;
+    top: 0;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 13, 13, 0.53);
+}
+
+.project .projectLink {
+    padding: 0 15px;
+}
+
+.project .projectLink h3 {
+    font-size: 20px;
+    margin: 5px 0 0;
+
+}
+
+.project:hover {
+    background: rgba(238, 241, 240, 0.882);
+}
+
+.project a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(16, 80, 129);
+    transition: all .5s;
+}
+
+.project a:hover {
+    color: rgb(21, 21, 21);
+}
+
+
+/* moreAbout */
+
+.coverBg {
+    background: rgb(19, 19, 19, 0.5);
+    padding: 30px;
+}
+
+.description {
+    background: url("comimg1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 3px solid rgb(240, 234, 234);
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    margin: 0 40px;
+    text-align: center;
+}
+
+.description .more h4 {
+    margin: 40px auto;
+    width: 500px;
+    text-align: center;
+    text-align: center;
+    background: rgb(140, 179, 218);
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: black;
+}
+
+/* contact */
+
+.contact h2 {
+    margin: 40px 0;
+    text-align: center;
+    background: rgb(140, 179, 218);
+    padding: 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.left-contact-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgb(243, 240, 240);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.left-contact-info form input,
+textarea {
+    padding: 8px;
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.left-contact-info form button {
+    background: rgb(156, 200, 221);
+    width: fit-content;
+    margin: auto;
+    padding: 8px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+}
+
+.left-contact-info form button:hover {
+    background: rgb(135, 196, 224);
+}
+
+.right-contact-info .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+.right-contact-info .contact-box a {
+    text-decoration: none;
+    color: rgb(21, 20, 20);
+}
+
+.right-contact-info .contact-box a i {
+    background: rgb(14, 14, 14);
+    padding: 15px;
+    color: rgb(156, 200, 221);
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.right-contact-info .contact-box a i:hover {
+    color: rgb(14, 14, 14);
+    background: rgb(156, 200, 221);
+}
+
+@media (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav .navbar li a {
+        font-size: 20px;
+    }
+
+    .fronted p {
+        font-size: 30px;
+    }
+
+    .fronted-box {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    /* about */
+
+    .about {
+        width: 90%;
+        padding: 5px;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .space {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* project  */
+
+    .project{
+        width: 350px;
+        height: 300px;
+    }
+
+    /* .moreAbout */
+    
+    .description {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .description .more h4 {
+        width: 100%;
+    }
+    /* contact */
+
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 0;
+    }
+    .left-contact-info form{
+        background: none;
+    }
+    .left-contact-info form input,
+    textarea {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .right-contact-info .contact-box {
+        width: 100%;
+        margin: 10px auto;
+        padding: 5px 0;
+        background: rgba(116, 196, 194, 0.3);
+        color: white;
+        font-size: 16px;
+    }
+    .right-contact-info .contact-box a{
+        color: white;
+    }
+
+    .mainAbout > h2, .skills h2, .projectContainer h2, .contact h2, .description .more h4 {
+        font-size: 18px;
+    }
+}
