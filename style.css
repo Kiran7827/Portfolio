@@ -14,11 +14,10 @@ body {
     background: white;
     font-size: 20px;
     bottom: 0;
-    right: 0;
+    right: 5px;
     position: fixed;
     text-decoration: none;
     color: black;
-
 }
 
 /* navBar--------> */
@@ -454,6 +453,11 @@ textarea::placeholder {
         margin: 0 auto;
         position: relative;
         background: rgb(114, 135, 143);
+    }
+
+    .homeArrow a {
+        right: 10px;
+        padding: 8px;
     }
     .navitems {
         display: none;
